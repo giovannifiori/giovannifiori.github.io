@@ -23,6 +23,12 @@
       href="public/img/favicon-16x16.png"
     />
     <link rel="manifest" href="public/site.webmanifest" />
+    <script>
+      window.addEventListener('load', () => {
+        const yearsOfExperience = new Date().getFullYear() - 2017;
+        document.getElementById("years-exp").innerText = yearsOfExperience;
+      })
+    </script>
   </head>
   <body>
     <main
@@ -32,14 +38,10 @@
         <h1 class="text-3xl font-bold text-gray-900">Hello!</h1>
         <div class="flex flex-col gap-3 text-lg max-w-5xl">
           <p>
-            I&apos;m Giovanni Fiori, a product-minded software engineer from
-            Brazil.
+            I&apos;m Giovanni Fiori, a product-minded Software Engineer.
           </p>
-          <p>I do mostly full-stack web development.</p>
           <p>
-            In my 5+ years of experience, I&apos;ve worked in a variety of
-            projects, from small R&D ones to high-scale production systems.
-          </p>
+            In my <span id="years-exp">7</span> years of experience, I have contributed to the success of projects ranging from experimental innovations to high-traffic platforms with more than 20 million users and millions of monthly hits.</p>
           <p>
             Now I work for
             <a
@@ -55,18 +57,9 @@
           <p>
             Want to know me better? Feel free to
             <a target="_blank" href="mailto:contact@gfiori.dev"
-              >send me a message</a
-            >
-            or connect with me:
+              >send me a message</a>.
           </p>
-          <div class="flex gap-6">
-            <a target="_blank" href="https://linkedin.com/in/giovannifiori"
-              >Linkedin</a
-            >
-            <a target="_blank" href="https://github.com/giovannifiori"
-              >GitHub</a
-            >
-          </div>
+          
         </div>
       </div>
     </main>
